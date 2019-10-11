@@ -1,0 +1,14 @@
+{
+    "name": "zhangcs/php-examples",
+    "description": "some php examples",
+    "type": "project",
+    "authors": [
+        {
+            "name": "zhang",
+            "email": "1114238502@qq.com"
+        }
+    ],
+    "require": {
+        "php-amqplib/php-amqplib": "^2.10"
+    }
+}
