@@ -43,7 +43,7 @@ function process_message($message)
 }
 
 // 6、消费消息，并且设置回调函数为 process_message
-$channel->basic_consume($queue, 'hahah', false, false, false, false, 'process_message');
+$channel->basic_consume($queue, 'consumer_tag', false, false, false, false, 'process_message');
 
 // 7、注册终止函数，关闭通道，关闭连接
 function shutdown($channel, $connection)
