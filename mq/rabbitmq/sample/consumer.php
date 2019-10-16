@@ -17,7 +17,7 @@ $connection = new AMQPStreamConnection($host, $port, $username, $password, $vhos
 // 2、开启一个通道
 $channel = $connection->channel();
 
-$exchange = 'test_excahnge';
+$exchange = 'test_exchange';
 $queue = 'test_queue';
 
 // 3、声明一个交换器，并且设置相关属性
