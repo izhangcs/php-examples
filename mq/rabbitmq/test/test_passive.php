@@ -19,14 +19,11 @@ $vhost = '/';
 
 try {
     $connnection = new AMQPStreamConnection($host, $port, $username, $password, $vhost);
-
     $channel = $connnection->channel();
-
     $channel->exchange_declare('exchange1', AMQPExchangeType::FANOUT, true, true, false);
     $channel->queue_declare('queue1', true, true, false, false);
 } catch(\Exception $e) {
     echo $e->getMessage();
 }
-
 
 
