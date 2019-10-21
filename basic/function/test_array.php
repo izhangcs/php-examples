@@ -10,12 +10,6 @@ function test_array_pop() {
     $arr = [1, 2, 3];
     var_dump(array_pop($arr));
     var_dump($arr);
-    var_dump(array_pop($arr));
-    var_dump($arr);
-    var_dump(array_pop($arr));
-    var_dump($arr);
-    var_dump(array_pop($arr));
-    var_dump($arr);
 }
 
 test_array_pop();
